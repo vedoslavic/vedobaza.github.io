@@ -4,9 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+
     <title>Справочник</title>
 </head>
 <body>
+    <script src="/script.js"></script>
     <h1>Это справочник</h1>
+    <hr>
+    <p>Нажимай на каждую букву в первом столбце, чтобы прослушать её правильное звучание</p>
+    <div>
+        <audio id="aah"><source src="https://upload.wikimedia.org/wikipedia/commons/5/50/Open_central_unrounded_vowel.ogg" ></audio>
+        <p>
+            <button onclick="playSound('aah')" class="letter">ⱝ</button> – а
+        </p> 
+    </div>
+    <div>
+        <audio id="eeh"><source src="https://upload.wikimedia.org/wikipedia/commons/c/c9/Near-open_front_unrounded_vowel.ogg" ></audio>
+        <p>
+            <a href="#" onclick="playSound('eeh')" >ⱑ</a> – я(как в слове мята, тяпка, пятка)
+        </p> 
+    </div>
 </body>
 </html>
