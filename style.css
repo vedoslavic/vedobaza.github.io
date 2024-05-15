@@ -46,9 +46,9 @@ div.sliderContainer {
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background-color: #dbc500;
+    background-color: #ffffff;
     cursor: pointer;
-    border: 3px solid #f4f4f4;
+    border: 3px solid #000000;
 }
 
 .output {
