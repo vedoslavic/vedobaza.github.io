@@ -1,18 +1,61 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z8ga za tvorchestvo</title>
+
     <link rel="stylesheet" href="style.css">
-    <title>Главная страница</title>
 </head>
 <body>
-    <h1>Ведобаза Гобындыя</h1>
-    <p>
-        щас в вов персонажєй настрайивайу, чутка позжє ѕарегайуси
-        и не прощє ли тебе старина гой дати мне ссыљки на известныйи научныйи сайты дабы азы пасмотрелл и решылл для себя какой образ интєрфєйса и устройства сайта ѕаимствавати
-        и йєщо, а у тебя навернойо про аљкашєй бољнайа тема и ранейє настрадавшыси атаљкашєй ты не хотешы про них упоминати, да?
-    </p>
-    <a href="/spravochnik.html">Spravochnik</a>
+    <h1 style="text-align: center;">Z8ga za tvorchestvo</h1>
+     
+    <div class="sliderContainer">
+        <p class="slider-text">Рифмы и/или образы:</p>
+        <input type="range" min="1" max="10" step="1" value="1" id="rhymes" oninput="getScore()" class="slider">
+        <div id="rhymesValue" class="output">1</div>
+    </div>
+
+    <div class="sliderContainer">
+        <p class="slider-text">Структура и/или ритмика: </p>
+        <input type="range" min="1" max="10" step="1" value="1" id="structure" oninput="getScore()" class="slider">
+        <div id="structureValue" class="output">1</div>
+   </div>
+
+        
+    <div class="sliderContainer">
+        <p class="slider-text">Реализация выбранного стиля: </p>
+        <input type="range" min="1" max="10" step="1" value="1" id="style" oninput="getScore()" class="slider">
+        <div id="styleValue" class="output">1</div>
+    </div>
+
+        
+    <div class="sliderContainer">
+        <p class="slider-text">Индивидуальность и/или харизма: </p>
+        <input type="range" min="1" max="10" step="1" value="1" id="individuality" oninput="getScore()" class="slider">
+        <div id="individualityValue" class="output">1</div>
+    </div>
+
+    <br>
+
+
+    <div class="sliderContainer">
+        <p class="slider-text">Атмосфера и/или вайб:</p>
+        <input type="range" min="1" max="5" step="1" value="1" id="atmosphere" oninput="getScore()" class="slider"> 
+        <div id="atmosphereValue" class="output">1</div>
+    </div>
+
+    <div class="sliderContainer">
+        <p class="slider-text">Трендовость и/или популярность: </p>
+        <input type="range" min="1" max="5" step="1" value="1" id="trend" oninput="getScore()" class="slider"> 
+        <div id="trendValue" class="output">1</div>
+    </div>
+
+    <div class="resultContainer">
+        <p>Итоговая оценка:</p> 
+        <div id="result"></div oninput="getScore()">
+    <div>
+
+    <script src="script.js"></script>
 </body>
 </html>

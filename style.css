@@ -1,20 +1,78 @@
-@font-face {
-	font-family: 'Fonty'; 
-	src: local('Fonty'),
-		url(/fonty.ttf); 
-}
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 body {
-    margin-left: auto; 
-    margin-right: auto; 
-    width: 50em;
-    font-family: 'Fonty';
+    margin-left: auto;
+    margin-right: auto;
+    width: 80em;
+    user-select: none;
+    font-family: 'Roboto', sans-serif;
+
+    background-color: #edeffd;
+
 }
 
-.letter {
-    background:none;
-    border:none;
-    margin:0;
-    padding:0;
-    cursor: pointer;
+div.sliderContainer {
+    width: 70em;
+    text-align: center;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
 }
+
+.slider {
+    flex: 9;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 18px !important;
+    width: 80em;
+    border-radius: 10em;
+    background-color: #c60000;
+    outline: none;
+    margin-bottom: 14px;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+    border: 3px solid #000000;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #dbc500;
+    cursor: pointer;
+    border: 3px solid #f4f4f4;
+}
+
+.output {
+    flex: auto;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 1.5px;
+    font-size: 20px;
+    width: 1em;
+}
+
+.slider-text {
+    flex: 6;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 1.5px;
+    font-size: 20px;
+    margin-bottom: 14px;
+}
+
+.resultContainer {
+    display: flex;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 2px;
+    font-size: 40px;
+    justify-content: center;
+}
+
